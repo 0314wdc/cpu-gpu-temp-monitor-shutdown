@@ -1,0 +1,2 @@
+# temp_monitor-Cpu-Gputemp-
+这是一个使用Tkinter和OpenHardwareMonitorLib构建的简单Python应用程序，用于监控CPU和GPU温度。它提供了基于温度阈值延迟自动关机的功能，以及手动定时关机和定时后进行温度检测延迟关机的功能。
