@@ -93,8 +93,8 @@ def read_temps():
             for sensor in hw.Sensors:
                 if sensor.SensorType.ToString() == "Temperature" and sensor.Value is not None:
                     val = float(sensor.Value)
-                    name = sensor.Name.lower()
-                    hw_name = hw.Name.lower()
+                    name = sensor.名字.lower()
+                    hw_name = hw.名字.lower()
                     if "cpu" in hw_name or "cpu" in name:
                         cpu_temps.append(val)
                     elif "gpu" in hw_name or "gpu" in name or "vga" in hw_name:
@@ -113,7 +113,7 @@ def do_shutdown():
 class App(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("温度监控与定时控制")
+        self.title("小哈哈-CPU/GPU温度监控与自动关机系统")
         self.geometry("500x380")
         self.resizable(True, True)
 
@@ -390,7 +390,7 @@ class App(tk.Tk):
         elif self.check_delay_timer_running and self.check_delay_seconds_left <= 0:
             self.label_check_countdown.config(text="开始温度检测。")
             self.check_delay_timer_running = False
-            self.switch_mode("monitor")
+            self.witch_mode("monitor")
         else:
             self.label_check_countdown.config(text="")
             self.check_delay_timer_running = False
