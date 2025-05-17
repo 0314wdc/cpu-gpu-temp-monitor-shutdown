@@ -1,0 +1,9 @@
+{
+    "target_cpu_temp": 65.0,
+    "target_gpu_temp": 60.0,
+    "shutdown_delay_minutes": 4,
+    "check_interval": 1,
+    "timer_shutdown_minutes": 14,
+    "timer_start_check_minutes": 5,
+    "active_tab": "monitor"
+}
